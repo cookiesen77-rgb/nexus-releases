@@ -26,9 +26,10 @@
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/latest) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/latest) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows** | [Nexus_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/latest) | 适用于 Windows 10/11 |
+| **macOS (Intel)** | [Nexus_0.0.1_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.5/Nexus_0.0.1_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **macOS (Apple Silicon)** | [Nexus_0.0.1_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.5/Nexus_0.0.1_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.1_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.5/Nexus_0.0.1_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.1_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.5/Nexus_0.0.1_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -109,6 +110,7 @@
 - 修复模型选择不一致的 bug
 - 移除 Base URL 配置项
 - 添加 GitHub Actions 自动构建
+- 支持 macOS (Intel/ARM) 和 Windows
 
 ---
 
