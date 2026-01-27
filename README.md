@@ -105,11 +105,7 @@
 ## 更新日志
 
 ### v0.0.5
-- 默认切换为浅色主题
 - 项目独立聊天记录
-- 修复模型选择不一致的 bug
-- 移除 Base URL 配置项
-- 添加 GitHub Actions 自动构建
 - 支持 macOS (Intel/ARM) 和 Windows
 
 ---
