@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.8-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.10-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.8
+### 最新版本: v0.0.10
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_0.0.8_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.8/Nexus_0.0.8_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_0.0.8_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.8/Nexus_0.0.8_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.8_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.8/Nexus_0.0.8_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.8_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.8/Nexus_0.0.8_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Intel)** | [Nexus_0.0.10_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.10/Nexus_0.0.10_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **macOS (Apple Silicon)** | [Nexus_0.0.10_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.10/Nexus_0.0.10_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.10_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.10/Nexus_0.0.10_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.10_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.10/Nexus_0.0.10_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,17 @@
 ---
 
 ## 更新日志
+
+### v0.0.10
+- **新增工作流模板** - 漫画分镜、多角度分镜模板
+- **新增导演台** - AI 智能生成分镜脚本
+- **新增草图编辑器** - 涂鸦生图/生视频
+- **新增音频工作室** - Suno 文生音乐
+- **新增提示词库** - 运镜/Nano Banana/漫画模板
+
+### v0.0.9
+- 新增提示词库功能
+- 修复侧边栏按钮状态
 
 ### v0.0.8
 - 修复应用启动崩溃问题
