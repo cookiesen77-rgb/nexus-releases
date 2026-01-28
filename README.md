@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.22-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.23-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.22
+### 最新版本: v0.0.23
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_0.0.22_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.22/Nexus_0.0.22_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_0.0.22_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.22/Nexus_0.0.22_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.22_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.22/Nexus_0.0.22_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.22_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.22/Nexus_0.0.22_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Intel)** | [Nexus_0.0.23_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.23/Nexus_0.0.23_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **macOS (Apple Silicon)** | [Nexus_0.0.23_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.23/Nexus_0.0.23_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.23_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.23/Nexus_0.0.23_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.23_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.23/Nexus_0.0.23_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,12 @@
 ---
 
 ## 更新日志
+
+### v0.0.23
+- **导演台一键生成** - 点击"一键生成"自动润色提示词并生成图片
+- **修复导演台生图** - 支持 Gemini、Kling、Chat 等多种模型格式
+- **新增电商预设** - 电商主图、产品多角度、模特展示、场景图等
+- **新增场景四角度预设** - 2x2 网格展示同一场景的 4 个经典机位
 
 ### v0.0.22
 - **启用自动更新** - 应用启动时自动检测新版本，可一键更新
