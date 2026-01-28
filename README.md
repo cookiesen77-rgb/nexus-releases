@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.11-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.12-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.11
+### 最新版本: v0.0.12
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_0.0.11_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.11/Nexus_0.0.11_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_0.0.11_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.11/Nexus_0.0.11_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.11_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.11/Nexus_0.0.11_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.11_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.11/Nexus_0.0.11_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Intel)** | [Nexus_0.0.12_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.12/Nexus_0.0.12_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **macOS (Apple Silicon)** | [Nexus_0.0.12_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.12/Nexus_0.0.12_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.12_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.12/Nexus_0.0.12_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.12_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.12/Nexus_0.0.12_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,12 @@
 ---
 
 ## 更新日志
+
+### v0.0.12
+- **修复裁剪拖动问题** - 裁剪框现在可以正常拖动和缩放
+- **修复图片/视频下载** - 支持 Tauri 和 Web 环境
+- **修复图片/视频预览** - data URL 支持新窗口显示
+- **优化用户反馈** - 所有操作添加成功/失败提示
 
 ### v0.0.11
 - **新增图片裁剪功能** - 支持自由裁剪和预设比例（1:1, 4:3, 16:9 等）
