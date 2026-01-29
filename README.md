@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.26-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.32-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.26
+### 最新版本: v0.0.32
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_0.0.26_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_0.0.26_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.26_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.26_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Intel)** | [Nexus_0.0.32_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **macOS (Apple Silicon)** | [Nexus_0.0.32_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.32_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.32_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,33 @@
 ---
 
 ## 更新日志
+
+### v0.0.32
+- **修复视频时长参数** - 修复 Veo 3.1 等模型选择时长与生成结果不一致的问题
+- **修复 Sora 2 调用** - 将 Sora 2 格式独立，避免与 Veo 格式冲突
+- **详细调试日志** - 添加 duration 来源追踪，方便排查问题
+
+### v0.0.31
+- **修复 Sora 2 模型** - 使用正确的 /videos/generations 端点
+- **支持更多时长** - Sora 2 支持 5/10/15/20 秒
+- **支持更多分辨率** - Sora 2 支持 480p/720p/1080p
+
+### v0.0.30
+- **右键菜单优化** - 画布右键快速添加节点
+- **生成按钮优化** - 允许生成过程中重新点击触发新生成
+- **移除冗余选项** - 移除右键菜单中的"本地保存"选项
+
+### v0.0.29
+- **右键快速添加节点** - 画布右键弹出节点添加菜单
+- **工作流模板保存** - 用户可保存自定义工作流模板
+- **图片节点替换** - 图片节点支持从本地文件替换
+
+### v0.0.28
+- **修复 Windows 网络请求** - 全面使用 Tauri HTTP 插件
+- **优化 AbortController** - 解决 Windows 上的兼容性问题
+
+### v0.0.27
+- **新增 Sora 2 模型** - 支持 OpenAI Sora 2 视频生成
 
 ### v0.0.26
 - **修复 Windows 请求问题** - 使用 Tauri HTTP 插件替代原生 fetch
