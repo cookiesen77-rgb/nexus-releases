@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.32-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.50-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,16 +22,16 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.32
+### 最新版本: v0.0.50
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_0.0.32_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_0.0.32_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.32_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.32_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.32/Nexus_0.0.32_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.50_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.50_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.50_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.50_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_x64-setup.msi) | Windows MSI 安装包 |
 
-[查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
+[查看所有版本](https://github.com/cookiesen77-rgb/nexus-source/releases)
 
 ---
 
@@ -103,6 +103,12 @@
 ---
 
 ## 更新日志
+
+### v0.0.50
+- **修复右键菜单文件选择器** - 修复右键添加图片/视频/音频节点时文件选择器不弹出的问题
+- **图床优化** - Tauri 环境使用原生 HTTP 上传到 sm.ms，绕过 CORS 限制
+- **提示词逆推中文化** - 提示词逆推功能默认输出中文提示词
+- **修复白屏问题** - 修复函数定义顺序导致的应用白屏问题
 
 ### v0.0.32
 - **修复视频时长参数** - 修复 Veo 3.1 等模型选择时长与生成结果不一致的问题
