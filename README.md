@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.24-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.26-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.24
+### 最新版本: v0.0.26
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Intel)** | [Nexus_0.0.24_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.24/Nexus_0.0.24_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **macOS (Apple Silicon)** | [Nexus_0.0.24_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.24/Nexus_0.0.24_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.24_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.24/Nexus_0.0.24_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.24_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.24/Nexus_0.0.24_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Intel)** | [Nexus_0.0.26_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **macOS (Apple Silicon)** | [Nexus_0.0.26_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_aarch64.dmg) | 适用于 M1/M2/M3 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.26_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.26_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.26/Nexus_0.0.26_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,17 @@
 ---
 
 ## 更新日志
+
+### v0.0.26
+- **修复 Windows 请求问题** - 使用 Tauri HTTP 插件替代原生 fetch
+- **参考图序号** - 多张图片连接配置节点时显示"参考图1"、"参考图2"等标签
+- **新建项目命名** - 创建项目时弹出命名对话框
+- **默认模型选择** - 画布右上角可选择默认绘画/视频模型
+- **桌面拖拽支持** - 从桌面拖拽图片/视频到画布
+- **提示词逆推** - 上传图片，AI 分析生成结构化提示词
+
+### v0.0.25
+- **导演台功能完善** - 修复上板功能，同步生成内容到历史素材
 
 ### v0.0.24
 - **修复自动更新** - 修正更新检测 endpoint 和下载链接
