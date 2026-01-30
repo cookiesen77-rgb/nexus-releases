@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.50-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.55-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.50
+### 最新版本: v0.0.55
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.50_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.50_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.50_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.50_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.50/Nexus_0.0.50_x64-setup.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.55_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.55_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.55_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.55_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-source/releases)
 
@@ -103,6 +103,16 @@
 ---
 
 ## 更新日志
+
+### v0.0.55
+- **新增 Sora 2 OpenAI 官方格式** - 支持 OpenAI 官方视频生成 API 格式
+- **修复 Sora 视频生成和下载** - 修复视频状态查询和下载流程
+- **新增循环生成功能** - 图片/视频配置节点支持循环生成（1-10 次）
+- **新增 AI 助手模型设置** - 支持全局切换 AI 助手模型
+- **新增重新生成模式** - 可选择替换原节点或新建节点
+- **优化 Windows 图片下载** - 修复 Windows 环境下图片缓存问题
+- **优化视频下载超时** - 视频下载超时时间增加到 5 分钟
+- **优化全局错误处理** - 减少不必要的弹窗干扰
 
 ### v0.0.50
 - **修复右键菜单文件选择器** - 修复右键添加图片/视频/音频节点时文件选择器不弹出的问题
