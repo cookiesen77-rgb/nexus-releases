@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.56-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.62-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.56
+### 最新版本: v0.0.62
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.56_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.56_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.56_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.56_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_x64-setup.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.62_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.62_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.62_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.62_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,26 @@
 ---
 
 ## 更新日志
+
+### v0.0.62
+- **规范 AI 功能能力边界** - AI 润色与 AI 助手功能明确区分
+  - AI 润色：直接对文本进行润色，不进行互动询问
+  - AI 助手：可以提问、澄清、互动对话
+- **修复视频生成参数传递** - 节点配置切换后参数正确传递
+- **修复 Sora 2 图片尺寸匹配** - 自动调整图片尺寸以匹配 API 要求
+
+### v0.0.61
+- **修复视频生成参数传递** - 所有视频格式的 size 参数优先使用 UI 选择
+- **修复 Sora 2 图片尺寸问题** - 添加 resizeImageBlob 函数自动调整图片尺寸
+- **同步版本号** - Cargo.toml 与 package.json 版本保持一致
+
+### v0.0.60
+- **修复 Sora 2 (OpenAI官方格式)** - 正确的 API 端点和请求格式
+  - 创建端点: POST /v1/videos
+  - 查询端点: GET /v1/videos/{id}
+  - 请求格式: multipart/form-data
+- **新增 Tauri 优先原则** - 所有功能以 Tauri 桌面端为核心目标
+- **产品规范文档** - 新增最小改动原则和 Tauri 优先原则
 
 ### v0.0.56
 - **修复 Tauri 桌面端 API 请求** - 全面修复 /v1 路径重复问题 (/v1/v1/video/query)
