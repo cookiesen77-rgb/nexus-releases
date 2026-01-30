@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.62-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.63-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.62
+### 最新版本: v0.0.63
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.62_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.62_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.62_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.62_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.62/Nexus_0.0.62_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.63_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.63/Nexus_0.0.63_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.63_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.63/Nexus_0.0.63_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.63_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.63/Nexus_0.0.63_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.63_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.63/Nexus_0.0.63_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,11 @@
 ---
 
 ## 更新日志
+
+### v0.0.63
+- **修复文本节点复制问题** - AI 润色后文本可以正常选择和复制
+  - 覆盖 React Flow 节点的 user-select: none 默认样式
+  - textarea 和 input 元素强制启用文本选择
 
 ### v0.0.62
 - **规范 AI 功能能力边界** - AI 润色与 AI 助手功能明确区分
