@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.55-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.56-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.55
+### 最新版本: v0.0.56
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.55_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.55_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.55_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.55_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.56_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.56_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.56_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.56_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.56/Nexus_0.0.56_x64-setup.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,10 @@
 ---
 
 ## 更新日志
+
+### v0.0.56
+- **修复 Tauri 桌面端 API 请求** - 全面修复 /v1 路径重复问题 (/v1/v1/video/query)
+- **统一 URL 构建逻辑** - request.ts、useApi.js、api/*.js 保持一致的路径处理
 
 ### v0.0.55
 - **新增 Sora 2 OpenAI 官方格式** - 支持 OpenAI 官方视频生成 API 格式
