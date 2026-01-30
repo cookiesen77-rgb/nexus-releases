@@ -26,12 +26,12 @@
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.55_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.55_x64.dmg](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.55_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.55_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-source/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.55_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.55_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.55_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.55_x64-setup.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.55/Nexus_0.0.55_x64-setup.msi) | Windows MSI 安装包 |
 
-[查看所有版本](https://github.com/cookiesen77-rgb/nexus-source/releases)
+[查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
 ---
 
