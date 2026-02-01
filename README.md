@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.85-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.92-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.85
+### 最新版本: v0.0.92
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.85_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.85/Nexus_0.0.85_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.85_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.85/Nexus_0.0.85_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.85_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.85/Nexus_0.0.85_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.85_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.85/Nexus_0.0.85_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.92_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.92_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.92_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.92_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,17 @@
 ---
 
 ## 更新日志
+
+### v0.0.92
+- **短剧制作工作台（全屏）**
+  - 工作台路由化，自动/手动双模式
+  - 自动模式一致性流程优化：先角色/场景参考 → 再首/尾关键帧 → 再视频（关键帧/视频需手动点击触发）
+  - 图片/视频支持更方便的预览
+- **剪辑台增强**
+  - 进入即预览（无需先点播放），返回前强制保存剪辑工程
+  - 桌面端支持导出成片（FFmpeg sidecar）
+- **历史素材同步**
+  - 画布/短剧/剪辑台产物全链路同步到“历史素材”
 
 ### v0.0.85
 - **新增绘画模型：豆包 Seedream 4.5**
