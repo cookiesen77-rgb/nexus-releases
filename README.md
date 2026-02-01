@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.82-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.84-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.82
+### 最新版本: v0.0.84
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.82_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.82/Nexus_0.0.82_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.82_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.82/Nexus_0.0.82_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.82_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.82/Nexus_0.0.82_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.82_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.82/Nexus_0.0.82_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.84_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.84/Nexus_0.0.84_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.84_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.84/Nexus_0.0.84_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.84_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.84/Nexus_0.0.84_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.84_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.84/Nexus_0.0.84_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,18 @@
 ---
 
 ## 更新日志
+
+### v0.0.84
+- **生成加速模式（稳定/平衡/极速）**
+  - 极速模式：优先直链回写，缓存/落库后台进行，显著改善 “后端已完成但画布迟迟不出图/视频”
+- **Tauri：直链优先 + 失败再缓存兜底**
+  - 图片/视频直链加载失败时自动触发缓存兜底（可携带 Bearer 下载）
+- **更稳的重试与轮询**
+  - 请求层支持 `Retry-After`，轮询间隔随模式调整
+
+### v0.0.83
+- **Tauri 生图回写加速**
+  - 非鉴权公网图片不再等待缓存/落库，先回写 url，落库在后台进行
 
 ### v0.0.82
 - **Windows/Tauri：图片稳定性增强**
