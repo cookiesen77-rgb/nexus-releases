@@ -1,0 +1,80 @@
+name: Sync Release from nexus-source
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare variables
+        id: vars
+        run: |
+          echo "tag=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+          echo "version=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
+      - name: Download artifacts from source release
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.vars.outputs.version }}"
+          BASE="https://github.com/cookiesen77-rgb/nexus-source/releases/download/v${VERSION}"
+          mkdir -p artifacts
+
+          files=(
+            "Nexus_${VERSION}_aarch64.dmg"
+            "Nexus_${VERSION}_x64.dmg"
+            "Nexus_${VERSION}_x64-setup.exe"
+            "Nexus_${VERSION}_x64_en-US.msi"
+          )
+
+          download() {
+            local name="$1"
+            local url="${BASE}/${name}"
+            echo "Downloading ${url}"
+            for i in $(seq 1 120); do
+              if curl -L -f --connect-timeout 20 --max-time 300 -o "artifacts/${name}" "${url}"; then
+                echo "OK ${name}"
+                return 0
+              fi
+              echo "Retry ${i}/120 for ${name} ..."
+              sleep 20
+            done
+            echo "FAILED ${name}"
+            return 1
+          }
+
+          for f in "${files[@]}"; do
+            download "$f"
+          done
+
+          ls -la artifacts
+
+      - name: Create Release (mirror)
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.vars.outputs.tag }}
+          name: Nexus ${{ steps.vars.outputs.tag }}
+          body: |
+            ## Nexus ${{ steps.vars.outputs.tag }}
+            
+            此仓库用于提供 Nexus 安装包下载（镜像自 `cookiesen77-rgb/nexus-source`）。
+            
+            ### 下载
+            - **macOS Intel**: `Nexus_${{ steps.vars.outputs.version }}_x64.dmg`
+            - **macOS Apple Silicon**: `Nexus_${{ steps.vars.outputs.version }}_aarch64.dmg`
+            - **Windows**: `Nexus_${{ steps.vars.outputs.version }}_x64-setup.exe` / `.msi`
+          files: |
+            artifacts/*.dmg
+            artifacts/*.exe
+            artifacts/*.msi
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+

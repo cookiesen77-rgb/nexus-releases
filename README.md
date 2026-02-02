@@ -1,7 +1,7 @@
 # Nexus
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.0.92-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.0.94-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg" alt="Platform">
 </p>
 
@@ -22,14 +22,14 @@
 
 ## 下载安装
 
-### 最新版本: v0.0.92
+### 最新版本: v0.0.94
 
 | 平台 | 下载链接 | 说明 |
 |------|----------|------|
-| **macOS (Apple Silicon)** | [Nexus_0.0.92_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
-| **macOS (Intel)** | [Nexus_0.0.92_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_x64.dmg) | 适用于 Intel 芯片 Mac |
-| **Windows (EXE)** | [Nexus_0.0.92_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_x64-setup.exe) | Windows 安装程序 |
-| **Windows (MSI)** | [Nexus_0.0.92_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.92/Nexus_0.0.92_x64_en-US.msi) | Windows MSI 安装包 |
+| **macOS (Apple Silicon)** | [Nexus_0.0.94_aarch64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.94/Nexus_0.0.94_aarch64.dmg) | 适用于 M1/M2/M3/M4 芯片 Mac |
+| **macOS (Intel)** | [Nexus_0.0.94_x64.dmg](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.94/Nexus_0.0.94_x64.dmg) | 适用于 Intel 芯片 Mac |
+| **Windows (EXE)** | [Nexus_0.0.94_x64-setup.exe](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.94/Nexus_0.0.94_x64-setup.exe) | Windows 安装程序 |
+| **Windows (MSI)** | [Nexus_0.0.94_x64_en-US.msi](https://github.com/cookiesen77-rgb/nexus-releases/releases/download/v0.0.94/Nexus_0.0.94_x64_en-US.msi) | Windows MSI 安装包 |
 
 [查看所有版本](https://github.com/cookiesen77-rgb/nexus-releases/releases)
 
@@ -103,6 +103,23 @@
 ---
 
 ## 更新日志
+
+### v0.0.94
+- **素材导出 / 下载**
+  - 历史素材与画布批量下载：备注（文件名）生效，同名自动去重
+  - 支持导出 PDF：自由排版（拖拽/缩放图片、添加文字、多页）
+  - Tauri：导出稳定性增强（图片加载失败兜底 + MIME 推断）
+- **Windows 稳定性**
+  - Tauri 请求兜底：`plugin-http` 异常时自动回退到 WebView `fetch`（修复少量用户“完全无法请求”）
+
+### v0.0.93
+- **短剧制作工作台**
+  - 批量首/尾生成状态修复：成功不再卡在“生成中”
+  - 支持从历史素材/画布导入图片与视频到工作台各槽位
+  - 支持工作台素材一键上板到画布
+  - 自动模式「分析并搭建」按钮在窄宽度下不再挤压错位
+- **下载增强**
+  - 需要鉴权的素材下载自动附带 Bearer（更稳定）
 
 ### v0.0.92
 - **短剧制作工作台（全屏）**
